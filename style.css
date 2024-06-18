@@ -1,0 +1,181 @@
+/*!
+ * The homepage styles from Minimal theme, by @izhx - https://github.com/izhx
+ * Licenses - Fonts: SIL OFL 1.1, Code: MIT License
+ */
+
+/*!
+ * Fontsource Noto Sans v12 Files by @fontsource - https://fontsource.org
+ * Noto Sans v12 Designed by Google
+ * Licenses - Font: SIL OFL 1.1, CSS: MIT License
+ */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://cdn.jsdelivr.net/npm/@fontsource/noto-sans@4.3.0/files/noto-sans-latin-400-italic.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://cdn.jsdelivr.net/npm/@fontsource/noto-sans@4.3.0/files/noto-sans-latin-700-italic.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://cdn.jsdelivr.net/npm/@fontsource/noto-sans@4.3.0/files/noto-sans-latin-400-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://cdn.jsdelivr.net/npm/@fontsource/noto-sans@4.3.0/files/noto-sans-latin-700-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+/* 
+  Some styles from https://github.com/pages-themes/minimal
+  Some styles from https://wowchemy.com/
+*/
+body {
+  background-color: #fff;
+  padding: 50px;
+  font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #727272;
+  font-weight: 400
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #222;
+  margin: 20px 0 10px
+}
+
+h1, h2, h3 { line-height: 1.1 }
+
+h2 { color: #393939 }
+
+h3, h4, h5, h6 { color: #494949 }
+
+a {
+  color: #267CB9;
+  text-decoration: none
+}
+
+a:hover, a:focus {
+  color: #069;
+  font-weight: bold
+}
+
+a small {
+  font-size: 11px;
+  color: #777;
+  margin-top: -0.3em;
+  display: block
+}
+
+a:hover small { color: #777 }
+
+img { margin:0 auto }
+
+.wrapper {
+  margin: 0 auto;
+}
+
+.show-when-en, .show-when-zh, .show-when-print, .show-when-narrow{
+  display: none
+}
+
+header {
+  width: 260px;
+  float: left;
+  position: fixed;
+  -webkit-font-smoothing: subpixel-antialiased
+}
+
+header h1, header h2, header div, header p, footer p { text-align: center }
+
+footer {
+  width: 260px;
+  float: left;
+  position: fixed;
+  bottom: 20px;
+  -webkit-font-smoothing: subpixel-antialiased
+}
+
+strong {
+  color: #222;
+  font-weight: 700
+}
+
+section {
+  margin-left: 256px;
+  padding-bottom: 50px
+}
+
+small { font-size: 11px }
+
+hr {
+  border: 0;
+  background: #e5e5e5;
+  height: 1px;
+}
+
+p, ul { margin-top: 0 }
+
+p { margin-bottom: 5px }
+
+ol li { margin-bottom: 5px }
+
+/* 照片下方链接每 少/多 一行，需 增加/减少 此 max-height 20px */
+@media screen and (max-height: 640px) and (min-width: 961px) {
+  .hide-when-shorter{ display:none }
+}
+/* 照片下方链接每 少/多 一行，需 增加/减少 此 max-height 20px */
+@media screen and (max-height: 690px) and (min-width: 961px) {
+  .hide-when-short{ display:none }
+}
+
+@media print, screen and (max-width: 960px) {
+  div.wrapper { margin: 0 }
+  header, section, footer {
+    float: none;
+    position: static;
+    width: auto
+  }
+  header { padding-right: 0 }
+  section {
+    border: 1px solid #e5e5e5;
+    border-width: 1px 0;
+    padding: 20px 0;
+    margin: 0 0 20px
+  }
+   header a small, header h1, header h2 { display: inline }
+  .hide-when-narrow { display:none }
+}
+
+@media print, screen and (max-width: 720px) {
+  body { word-wrap: break-word }
+}
+
+@media print, screen and (max-width: 480px) {
+  body { padding: 15px }
+}
+
+@media print {
+  body {
+    padding: 0.4in;
+    font-size: 11pt;
+    color: #444
+  }
+  .hide-when-print { display:none }
+  .show-when-print { display:inherit }
+}
