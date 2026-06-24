@@ -110,7 +110,10 @@ header h1, header h2, header div, header p, footer p { text-align: center }
 }
 
 .email-link {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
   margin-bottom: 8px;
   color: #555;
 }
@@ -143,11 +146,15 @@ header h1, header h2, header div, header p, footer p { text-align: center }
   line-height: 1.4;
 }
 
-.profile-links i {
+.profile-icon {
   width: 13px;
-  font-size: 13px;
-  line-height: 1;
-  text-align: center;
+  height: 13px;
+  flex: 0 0 auto;
+  display: inline-block;
+}
+
+.email-link .profile-icon {
+  filter: invert(45%) sepia(8%) saturate(9%) hue-rotate(340deg) brightness(89%) contrast(89%);
 }
 
 .profile-links a:hover,
