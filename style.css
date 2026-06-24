@@ -103,6 +103,61 @@ header {
 
 header h1, header h2, header div, header p, footer p { text-align: center }
 
+.contact-card {
+  margin: 10px auto 0;
+  max-width: 230px;
+  text-align: center;
+}
+
+.email-link {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.profile-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.profile-row {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.profile-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  min-height: 24px;
+  padding: 2px 8px;
+  border: 1px solid #d8e2ea;
+  border-radius: 4px;
+  background: #f8fbfd;
+  color: #267CB9;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.profile-links i {
+  width: 13px;
+  font-size: 13px;
+  line-height: 1;
+  text-align: center;
+}
+
+.profile-links a:hover,
+.profile-links a:focus {
+  background: #eef6fb;
+  border-color: #b8cfde;
+  color: #069;
+  font-weight: 400;
+}
+
 footer {
   width: 260px;
   float: left;
